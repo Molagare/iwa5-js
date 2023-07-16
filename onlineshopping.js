@@ -1,11 +1,9 @@
 const FREE_WARNING = 'Free shipping only applies to single customer orders'
-console.log(FREE_WARNING);
 const BANNED_WARNING = 'Unfortunately we do not ship to North Korea'
-console.log(BANNED_WARNING)
 NONE_SELECTED = 0;
 const customer = 1;
+let location = RSA;
 
-let location = RSA
 if (location === RSA){
     console.log('shipping === R400')
 }
@@ -25,16 +23,14 @@ const batteries = 35 * 2
 const pens = 5 * 'NONE_SELECTED'
 
 if (shoes + batteries + pens + shirts > 1000 && location === NAM && customer <2) {
-    console.log('free shipping') 
+    console.log('shipping=== $600') 
 }
     else {
-        console.log('shipping === $600')
+        console.log('free shipping')
     }
     if (shoes + batteries + pens + shirts > 1000 && location === RSA && customer <2){
-    console.log('free shipping')} 
-    else {
-        console.log('shipping === R400')
-    }
+    console.log('freee shipping')} 
+    
 
 if (shipping === 0 && customer !== 1){
     console.log(FREE_WARNING)
@@ -43,4 +39,5 @@ if (shipping === 0 && customer !== 1){
 location = Nk
 if (location === NK){
     console.log(BANNED_WARNING)
+    console.log ('price:$',shoes + batteries + pens + shirts + 800)
 }
